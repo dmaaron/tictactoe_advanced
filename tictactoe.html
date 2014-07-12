@@ -1,0 +1,41 @@
+<html>
+  <head>
+      <title>Tic Tac Toe</title>
+      <link href='css/style.css' type='text/css' rel='stylesheet'>
+      <script type='text/javascript' src='js/jquery-2.0.2.min.js'></script>
+      <script type='text/javascript' src='js/tictactoe.js'></script>
+  </head>
+  <body>
+    <div id='container'>
+      <h1>Tic Tac Toe (with jQuery!)</h1>
+      <button id="start-button">Start</button>
+        <div id='game-timer'>
+      <h3>Game Timer:</h3>
+      <h4> </h4>
+      </div>
+      <!-- We represent the Tic Tac Toe "board" with a 3x3 table. Each row keeps track of its row number and each cell keeps track of its column number, using data attributes. These act as "sticky notes" on our DOM elements, allowing us to access information about an element later. This is particularly useful for treating different elements differently in Javascript. Read about the .data() method in jQuery to see how to use data attributes well -->
+      <table id='tictactoe_board'>
+        <tbody>
+          <tr data-row=0>
+            <td id="00" class='blank cell' data-col=0></td>
+            <td id="01" class='blank cell' data-col=1></td>
+            <td id="02" class='blank cell' data-col=2></td>
+          </tr>
+          <tr data-row=1>
+            <td id="10" class='blank cell' data-col=0></td>
+            <td id="11" class='blank cell' data-col=1></td>
+            <td id="12" class='blank cell' data-col=2></td>
+          </tr>
+          <tr data-row=2>
+            <td id="20" class='blank cell' data-col=0></td>
+            <td id="21" class='blank cell' data-col=1></td>
+            <td id="22" class='blank cell' data-col=2></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- A hidden button that becomes visible once the game has ended and can be pressed to reset the game. Yes, I used an inline-style and no, this isn't generally good practice, but it's appropriate here -->
+      <button id='reset' class='hidden' style='display: none;'>Reset Game</button>
+    </div>
+  </body>
+</html>

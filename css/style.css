@@ -1,0 +1,50 @@
+table, #reset {
+  margin: 0 auto;
+  display: block;
+}
+
+h1 {
+  text-align: center;
+}
+
+h3, h4 {
+  background-color: gray;
+  text-align: center;
+  margin-top: 0px;
+}
+
+h4 {
+  font-size: 25px;
+}
+td {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 80px;
+}
+
+.xed {
+  background: red;
+}
+
+.oed {
+  background: blue;
+}
+
+#reset{
+  font-size: 1em;
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+#game-timer {
+  height:100px;
+  width:100px;
+  border:1px solid black;
+  display: inline-block;
+  position:relative;
+  left:44%;
+
+}
+
